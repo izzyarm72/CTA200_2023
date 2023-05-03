@@ -1,0 +1,43 @@
+  190  cd /fs/lustre/scratch/$USER
+  191  ls
+  192  mkdir CTA200_2023
+  193  cd CTA200_2023
+  194  mkdir assignment_1
+  195  touch README.md
+  196  ls
+  197  cd assignment_1
+  198  vi README.md
+  199  less README.md
+  200  cd /home/murray
+  201  pwd
+  202  find . -name '*Hello_world*'
+  203  cd home
+  204  cd /home
+  205  cp /home/murray/Hello_world.c /fs/lustre/scratch/$USER/CTA200_2023/assignment_1
+  206  cp /home/murray/Hello_world.py /fs/lustre/scratch/$USER/CTA200_2023/assignment_1
+  207  cd /fs/lustre/scratch/$USER
+  208  cd CTA200_2023/assignment_1
+  209  ls
+  210  mv Hello_world.c Hello_world_armstrong.c
+  211  mv Hello_world.py Hello_world_armstrong.py
+  212  module load gcc
+  213  g++ Hello_world_armstrong.c -o Hello_world.x
+  214  ls
+  215  module load python
+  216  ./Hello_world_armstrong.py
+  217  python Hello_world_armstrong.py
+  218  ./Hello_world.x
+  219  vi Hello_world.x
+  220  vi Hello_world_armstrong.c
+  221  vi Hello_world_armstrong.py
+  222  g++ Hello_world_armstrong.c -o Hello_world.x
+  223  ./Hello_world.x -o output_c.txt
+  224  ls
+  225  ./Hello_world.x | output_c.txt
+  226  touch output_c.txt
+  227  ./Hello_world.x | output_c.txt
+  228  ./Hello_world.x > output_c.txt
+  229  ls
+  230  less output_c.txt
+  231  python Hello_world_armstrong.py > output_python.txt
+  232  history > history.txt
