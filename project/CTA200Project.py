@@ -175,7 +175,7 @@ plt.grid()
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 #saving the plot
 plt.savefig('VescVsGCv.png',  bbox_inches='tight') 
-plt.savefig('VescVsGCv.pdf') 
+plt.savefig('VescVsGCv.pdf', bbox_inches='tight') 
 plt.show()
   
 
@@ -192,7 +192,7 @@ plt.grid()
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 #saving the plot 
 plt.savefig('GCdist.png', bbox_inches='tight')
-plt.savefig('GCdist.pdf')
+plt.savefig('GCdist.pdf', bbox_inches='tight')
 plt.show()
 
 #----------------------
